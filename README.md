@@ -1,5 +1,7 @@
 # etherwake2
 
+Tool to create magic packets that does not require sudo for installation and execution. 
+
 ## Installation
 
 First, configure wake-on-lan on the machine you want to wake up:
