@@ -6,9 +6,11 @@ Tool to create magic packets that does not require sudo for installation and exe
 
 First, configure wake-on-lan on the machine you want to wake up:
 
-1. Install `ethtool` via `sudo apt install ethtool`
+1. Make sure that wake-on-lan is enabled in the bios.
 
-2. Enable wake-on-lan persistently. This requires you to copy the file `wol.service` of this repository to `/etc/systemd/system/wol.service` and replace "eth0" inside of this file with the name of your network interface. You can obtain this name by running `ip addr`. Enable the WOL service via 
+2. Install `ethtool` via `sudo apt install ethtool`
+
+3. Enable wake-on-lan persistently. This requires you to copy the file `wol.service` of this repository to `/etc/systemd/system/wol.service` and replace "eth0" inside of this file with the name of your network interface. You can obtain this name by running `ip addr`. Enable the WOL service via 
 ```bash 
 sudo systemctl daemon-reload
 sudo systemctl enable wol
