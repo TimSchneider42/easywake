@@ -29,7 +29,7 @@ To wake your machine up, call
 ```bash
 ./easywake [MAC ADDRESS] [IP ADDRESS]
 ```
-where you replace [MAC ADDRESS] and [IP ADDRESS] with the MAC address and IP address of the machine you want to wake up. For example:
+where you replace [MAC ADDRESS] and [IP ADDRESS] with the MAC address and IP address of the machine you want to wake up. You can obtain this information by running `ip addr`. For example:
 
 ```bash
 ./easywake DE:AD:00:BE:EF:42 192.168.0.42
