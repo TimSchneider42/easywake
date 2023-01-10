@@ -34,3 +34,14 @@ where you replace [MAC ADDRESS] and [IP ADDRESS] with the MAC address and IP add
 ```bash
 ./easywake DE:AD:00:BE:EF:42 192.168.0.42
 ```
+
+If you are like us and need to frequently easywake the same machine over and over again... Worry no more! Just for this case we created the `wakemaboi` script. To obtain your copy of this limited edition bash script, run
+```bash
+wget --no-check-certificate https://raw.githubusercontent.com/TimSchneider42/easywake/master/wakemaboi
+chmod a+x wakemaboi
+```
+Inside wakemaboi, replace the MAC and IP addresses with your values.
+Now your machine can be woken up by simply running
+```bash
+./wakemaboi
+```

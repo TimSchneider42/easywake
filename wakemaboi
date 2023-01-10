@@ -1,0 +1,6 @@
+#!/bin/bash
+MAC="DE:AD:00:BE:EF:42"  # TODO: replace this with your MAC address
+IP="192.168.0.42"  # TODO: replace this with your IP address
+
+echo "Waking ya boi up..."
+./etherwake2 ${MAC} ${IP}
