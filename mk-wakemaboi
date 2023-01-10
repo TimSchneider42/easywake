@@ -1,0 +1,33 @@
+#!/bin/bash
+cat > wakemaboi <<- EOM
+#!/bin/bash
+MAC="$1"  # TODO: replace this with your MAC address
+IP="$2"  # TODO: replace this with your IP address
+
+if [ "${MAC^^}" = "50:EB:F6:57:41:CF" ]; then
+    echo -n "Warming up transistors"
+    sleep 1; echo -n "."; sleep 1; echo -n "."; sleep 1; echo "."; sleep 1;
+    echo -n "Assembling magic packet"
+    sleep 1; echo -n "."; sleep 1; echo -n "."; sleep 1; echo "."; sleep 1;
+    echo -n "Preparing magic packet for launch"
+    sleep 1; echo -n "."; sleep 1; echo -n "."; sleep 1; echo "."; sleep 1;
+    echo -n "Preheating IPv4 engines"
+    sleep 1; echo -n "."; sleep 1; echo -n "."; sleep 1; echo "."; sleep 1;
+    echo "All systems ready."
+    sleep 2;
+    echo "Launching magic packet."
+    sleep 2;
+    echo "UDP angel spreading its wings!"
+    sleep 4;
+    echo "I repeat, UDP angel spreading its wings!"
+    sleep 4;
+    echo "It's a small step for a Hansel but a big energy saving for mankind."
+    sleep 4;
+else
+    echo "Waking ya boi up..."
+fi
+
+./easywake ${MAC} ${IP}
+EOM
+
+chmod a+x wakemaboi 
