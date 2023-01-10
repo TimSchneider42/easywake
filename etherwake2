@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mac="$1"
+ip="$2"
+mac_bytes="\\\\x${mac//:/\\\\x}"
+mac_rep="$(printf "${mac_bytes}%.0s" {1..16})"
+echo -n -e "\xff\xff\xff\xff\xff\xff${mac_rep}" > /dev/udp/${ip}/9
