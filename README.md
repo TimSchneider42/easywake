@@ -1,4 +1,4 @@
-# etherwake2
+# easywake
 
 Tool to create magic packets that does not require sudo for installation and execution. 
 
@@ -15,11 +15,11 @@ sudo systemctl enable wol
 sudo systemctl start wol
 ```
 
-Second, download the etherwake2 script on the machine you want to use for waking up the first machine:
+Second, download the easywake script on the machine you want to use for waking up the first machine:
 
 ```bash
-wget --no-check-certificate https://raw.githubusercontent.com/TimSchneider42/etherwake2/master/etherwake2
-chmod a+x etherwake2
+wget --no-check-certificate https://raw.githubusercontent.com/TimSchneider42/easywake/master/easywake
+chmod a+x easywake
 ```
 
 ## Usage
@@ -27,10 +27,10 @@ chmod a+x etherwake2
 To wake your machine up, call
 
 ```bash
-./etherwake2 [MAC ADDRESS] [IP ADDRESS]
+./easywake [MAC ADDRESS] [IP ADDRESS]
 ```
 where you replace [MAC ADDRESS] and [IP ADDRESS] with the MAC address and IP address of the machine you want to wake up. For example:
 
 ```bash
-./etherwake2 DE:AD:00:BE:EF:42 192.168.0.42
+./easywake DE:AD:00:BE:EF:42 192.168.0.42
 ```
