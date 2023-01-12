@@ -18,7 +18,7 @@ echo "All systems ready."
 sleep 2;
 echo "Launching magic packet."
 for i in \$(seq 1 100); do
-  for j in \$(seq 1 \$i); do
+  for (( j=1; j<=$i; j++ )); do
     echo -n " "
   done
   sleep 0.05
